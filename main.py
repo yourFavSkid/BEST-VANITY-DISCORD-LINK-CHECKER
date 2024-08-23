@@ -19,7 +19,7 @@ def iter(codes):
         if code != target_code:
             with open("goodCodes.txt","a+") as sucessfulCodes:
               sucessfulCodes.write(target_code+"\n")
-            print(Fore.GREEN+target_code+"GOOD")
+            print(Fore.GREEN+target_code+" GOOD")
         else:
           print(Fore.RED+target_code)
       except Exception as e:
